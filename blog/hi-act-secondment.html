@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HI-ACT Secondment | Energentic Research Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Newsreader:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0f172a;
+      --slate: #111827;
+      --muted: #607086;
+      --accent: #0f8fff;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --border: #e5e7eb;
+      --radius: 18px;
+      --text: #0f172a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at 18% 18%, rgba(15, 143, 255, 0.08), transparent 30%),
+                  radial-gradient(circle at 80% 0%, rgba(15, 143, 255, 0.05), transparent 22%),
+                  var(--bg);
+      color: var(--text);
+      font-family: "Space Grotesk", "Helvetica Neue", sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(12px);
+      background: rgba(248, 250, 252, 0.9);
+      border-bottom: 1px solid var(--border);
+    }
+    nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--slate);
+    }
+    .brand-badge {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    }
+    .brand-badge img { width: 100%; height: 100%; object-fit: contain; }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #ffffff;
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-weight: 700;
+      box-shadow: 0 12px 30px rgba(15, 143, 255, 0.25);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .cta:hover { transform: translateY(-2px); box-shadow: 0 16px 38px rgba(15, 143, 255, 0.3); }
+    main { padding: 10px 0 60px; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--card);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 14px;
+      border: 1px solid var(--border);
+    }
+    h1 {
+      font-family: "Newsreader", "Space Grotesk", serif;
+      font-size: 38px;
+      line-height: 1.15;
+      margin: 16px 0 10px;
+      letter-spacing: -0.02em;
+      color: var(--slate);
+    }
+    h2 {
+      font-size: 22px;
+      margin: 0 0 10px;
+      letter-spacing: -0.01em;
+    }
+    p { color: var(--muted); margin: 0 0 14px; }
+    ul, ol { color: var(--muted); padding-left: 18px; margin: 8px 0 14px; }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 14px 0 6px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #e0f0ff;
+      color: #0f3f73;
+      font-weight: 600;
+      font-size: 14px;
+      border: 1px solid #b7dbff;
+    }
+    .card {
+      padding: 18px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--card);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+      margin-bottom: 16px;
+    }
+    .lead { border-color: var(--border); background: var(--card); }
+    .article { display: grid; gap: 18px; }
+    .section-title { margin-top: 26px; }
+    .photo {
+      width: 70%;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      box-shadow: 0 12px 26px rgba(15, 23, 42, 0.12);
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+    .photo-small { width: 60%; }
+    figure { text-align: center; margin: 0; }
+    .caption {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 22px 20px;
+      background: rgba(255, 255, 255, 0.7);
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">
+        <div class="brand-badge">
+          <img src="../Profiles/Logo.png" alt="Energentic logo">
+        </div>
+        <span>Energentic Research Lab</span>
+      </div>
+      <div style="display:flex; gap:10px; align-items:center;">
+        <a class="cta" href="../index.html">← Back to home</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="eyebrow">HI-ACT Secondment · Dec 2025</div>
+      <h1>A Practical Journey Into Hydrogen Aviation Research: My Secondment at the University of Birmingham</h1>
+      <p>Reflections on a HI-ACT Secondment Fund placement at the Birmingham Energy Institute (BEI)—building hydrogen aviation models, expanding collaboration networks, and sharpening the research roadmap for airport energy systems.</p>
+      <div class="meta">
+        <span class="pill">By Dr Zekun Guo</span>
+        <span class="pill">Birmingham Energy Institute & HI-ACT</span>
+        <span class="pill">Hydrogen aviation · Energy systems · AI</span>
+      </div>
+
+      <div class="section-title"></div>
+      <div class="card article">
+        <div class="lead">
+          <h2>Why the secondment mattered</h2>
+          <p>As the only energy engineering researcher within my department (Data Science, AI and Modelling Centre) at the University of Hull, I have been exploring hydrogen aviation, multi-energy optimisation, and future airport energy systems—often without an immediate peer group. The secondment at BEI arrived at a crucial time, offering both technical insight and a research ecosystem that clarified the direction of my work.</p>
+        </div>
+
+        <figure>
+          <img class="photo" src="hi-act-secondment/picture-1.jpg" alt="HI-ACT colleagues at the All Hands meeting in Glasgow">
+          <figcaption class="caption">HI-ACT All Hands in Glasgow—connecting hydrogen, transport, and AI communities.</figcaption>
+        </figure>
+
+        <div>
+          <h2>Travelling between Hull and Birmingham</h2>
+          <p>The three-hour train journey became part of the rhythm: balancing a laptop on a moving table to read, code, reply to emails, and occasionally doze when the carriage warmed up. Stepping onto the Birmingham campus, the atmosphere was consistently worthwhile—structured, research-driven, and collaborative, with teams sketching constraints and refining models.</p>
+        </div>
+
+        <figure>
+          <img class="photo photo-small" src="hi-act-secondment/picture-2.jpg" alt="Team members during a HI-ACT session">
+          <figcaption class="caption">Team discussions on modelling assumptions during the HI-ACT secondment.</figcaption>
+        </figure>
+
+        <div>
+          <h2>Structured collaboration at BEI</h2>
+          <p>Weekly sessions with Professor Sara Walker helped position my work in a broader systems context—how hydrogen integrates with airport infrastructure, where bottlenecks arise, and which constraints matter most for national strategies. Sara also opened doors across BEI and HI-ACT:</p>
+          <ul>
+            <li>Dr Hadi Heidary: high-resolution hydrogen demand modelling for airports.</li>
+            <li>Dr Saeed Harati: storage configurations and scalability.</li>
+            <li>Dr Tongtong Zhang and Dr Jian Song: techno-economic frameworks for hydrogen supply chains; they later visited Hull for in-person discussions.</li>
+          </ul>
+          <p>These exchanges turned fragmented ideas into a clearer, more coherent direction.</p>
+        </div>
+
+        <figure>
+          <img class="photo photo-small" src="hi-act-secondment/picture-3.jpg" alt="Presenting hydrogen aviation research at Birmingham Energy Institute">
+          <figcaption class="caption">Sharing early findings on hydrogen aviation pathways at BEI.</figcaption>
+        </figure>
+
+        <div>
+          <h2>Expanding the network: HI-ACT All Hands in Glasgow</h2>
+          <p>At the HI-ACT All Hands Meeting, conversations with Professor David Flynn and Work Package 3 colleagues focused on coupling hydrogen systems with transport electrification digital twins. We discussed how future hydrogen production, storage, and refuelling demands interact with power-system planning, and how AI methods—forecasting, reinforcement learning, hierarchical optimisation—fit into hydrogen aviation and multi-energy modelling.</p>
+        </div>
+
+        <figure>
+          <img class="photo" src="hi-act-secondment/picture-4.png" alt="Discussing hydrogen aviation research outcomes with collaborators">
+          <figcaption class="caption">Secondment catch-up with collaborators on hydrogen storage and infrastructure.</figcaption>
+        </figure>
+
+        <div>
+          <h2>Research outcomes</h2>
+          <ul>
+            <li>2040 hydrogen demand scenario model for Birmingham Airport (BHX), covering flight schedules, energy requirements, and infrastructure assumptions.</li>
+            <li>Preliminary hydrogen supply chain optimisation framework balancing cost, emissions, operational feasibility, and spatial constraints.</li>
+            <li>Presented at the APEN-Disco workshop in Cardiff and invited to submit a journal paper to <em>Applied Energy</em>.</li>
+            <li>Collaborative review article synthesising technology readiness, economics, and system-level considerations of hydrogen aviation.</li>
+            <li>A sustained collaboration mechanism between Hull, Birmingham, and HI-ACT: regular meetings, shared modelling tools, and future grant conversations.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Impact</h2>
+          <ul>
+            <li>Clearer research roadmap for hydrogen-powered aviation, airport energy systems, and AI-enabled optimisation.</li>
+            <li>Stable collaboration network that will support future projects, publications, and student development.</li>
+            <li>Better alignment with national and industrial needs, grounding future engagement with airports, energy companies, and policymakers.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Looking ahead</h2>
+          <ul>
+            <li>Hydrogen aviation system modelling, focusing on future airport infrastructure requirements.</li>
+            <li>Multi-energy system optimisation, integrating hydrogen systems with electricity networks.</li>
+            <li>AI-driven forecasting and control, linking data science methods with energy engineering problems that need smarter solutions.</li>
+          </ul>
+          <p>The secondment was more than an academic exercise—it connected Hull, Birmingham, and the wider HI-ACT community, clarified the next stages of my research, and strengthened the collaborations needed to pursue them effectively.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Energentic Research Lab · Hydrogen aviation, multi-energy systems, and agentic AI.
+  </footer>
+</body>
+</html>
