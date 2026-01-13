@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Energentic Research Lab</title>
+  <title>AI x Energy Systems Lab</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="icon" type="image/png" href="Profiles/Logo.png">
-  <link rel="apple-touch-icon" href="Profiles/Logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Newsreader:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -58,18 +56,6 @@
       font-weight: 700;
       letter-spacing: 0.04em;
     }
-    .brand-badge {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      overflow: hidden;
-      display: grid;
-      place-items: center;
-      border: 1px solid var(--border);
-      background: #ffffff;
-      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
-    }
-    .brand-badge img { width: 100%; height: 100%; object-fit: contain; }
     .menu {
       display: flex;
       gap: 18px;
@@ -162,15 +148,6 @@
       border-radius: 12px;
       border: 1px solid var(--border);
       box-shadow: 0 6px 12px rgba(15, 23, 42, 0.05);
-    }
-    .mini-logo {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      background: #ffffff;
-      object-fit: contain;
-      box-shadow: 0 8px 16px rgba(15, 23, 42, 0.08);
     }
     section {
       max-width: 1200px;
@@ -279,6 +256,12 @@
       gap: 14px;
       align-items: flex-start;
     }
+    .lead.lead-centered {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .lead.lead-centered .info { text-align: center; }
     .lead .info { flex: 1; }
     .card strong { display: block; margin: 4px 0 6px; }
     @media (max-width: 600px) {
@@ -302,10 +285,7 @@
   <header>
     <nav>
       <div class="brand">
-        <div class="brand-badge">
-          <img src="Profiles/Logo.png" alt="Energentic logo">
-        </div>
-        <div>Energentic Research Lab</div>
+        <div>AI x Energy Systems Lab</div>
       </div>
       <div class="menu">
         <a href="#aims">Aims</a>
@@ -322,14 +302,16 @@
     <div>
       <div class="eyebrow">AI x Energy Systems</div>
       <h1>Autonomous agents for resilient, explainable, and carbon-aware energy infrastructure.</h1>
-      <p>We are building Energentic: a research-driven venture turning multimodal, modular LLM agents into trustworthy copilots for forecasting, optimisation, and real-time control. Our research spans energy system stability, transportation electrification, and human-in-the-loop autonomy.</p>
+      <p>We are building autonomous agentis for energy systems: a research-driven venture turning multimodal, modular LLM agents into trustworthy copilots for forecasting, optimisation, and real-time control. Our research spans energy system stability, transportation electrification, and human-in-the-loop autonomy.</p>
       <div class="hero-grid">
         <div class="metric">
-          <span>Current focus</span>
-          <strong>Agent-as-a-Service for grid & microgrid control</strong>
-          <div style="display:flex; align-items:center; gap:10px;">
-            <img class="mini-logo" src="Profiles/Logo.png" alt="Energentic logo">
-            <a class="cta small" href="https://www.energentic.ai" target="_blank" rel="noreferrer">Visit Energentic.ai</a>
+          <span>Lead</span>
+          <div class="lead lead-centered">
+            <img class="avatar" src="Profiles/Photo-Square.jpg" alt="Zekun Guo portrait">
+            <div class="info">
+              <strong><a href="https://drzekunguo.github.io/drzekunguo.github.io/" target="_blank" rel="noreferrer">Dr Zekun Guo</a></strong>
+              <p>Lecturer (Assistant Prof) in AI for Engineering</p>
+            </div>
           </div>
         </div>
         <div class="metric">
@@ -351,7 +333,7 @@
 
   <section id="aims">
     <h2>Research Aims</h2>
-    <p class="sub">Energentic’s research program bridges frontier AI and deployable engineering. We prototype agentic control stacks, validate them on real-world energy assets, and open-source methods that accelerate the transition to net-zero operations.</p>
+    <p class="sub">The group’s research program bridges frontier AI and deployable engineering. We prototype agentic control stacks, validate them on real-world energy assets, and open-source methods that accelerate the transition to net-zero operations.</p>
     <div class="grid">
       <div class="card">
         <div class="chip">Aim 01</div>
@@ -535,7 +517,7 @@
 
   <section id="publications">
     <h2>Selected Publications</h2>
-    <p class="sub">Research that underpins Energentic’s roadmap.</p>
+    <p class="sub">Research that underpins the group’s roadmap.</p>
     <div class="list">
       <div class="list-item">
         <div class="label">2025 · arXiv:2502.10557</div>
@@ -570,20 +552,18 @@
       </div>
       <div class="card">
         <div class="chip">Links</div>
-        <p><a href="https://www.hull.ac.uk/research/centres/centre-of-excellence-for-data-science-artificial-intelligence-and-modelling" target="_blank" rel="noreferrer">University of Hull • DAIM</a><br>
-           <a href="https://www.energentic.ai" target="_blank" rel="noreferrer">Energentic.ai</a></p>
+        <p><a href="https://www.hull.ac.uk/research/centres/centre-of-excellence-for-data-science-artificial-intelligence-and-modelling" target="_blank" rel="noreferrer">University of Hull • DAIM</a><br></p>
       </div>
       <div class="card">
         <div class="chip">Connect</div>
-        <p><a href="https://x.com/energentic_ai" target="_blank" rel="noreferrer">X/Twitter</a><br>
-           <a href="https://www.linkedin.com/in/zekun-guo-a428b3198/" target="_blank" rel="noreferrer">LinkedIn</a><br>
+        <p><a href="https://www.linkedin.com/in/zekun-guo-a428b3198/" target="_blank" rel="noreferrer">LinkedIn</a><br>
            <a href="https://github.com/Energentic" target="_blank" rel="noreferrer">GitHub</a></p>
       </div>
     </div>
   </section>
 
   <div class="footer">
-    Energentic Research Lab · Built for the energy transition with agentic AI.
+    AI x Energy Systems Lab · Built for the energy transition with agentic AI.
   </div>
 </body>
 </html>
